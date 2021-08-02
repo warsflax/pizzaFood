@@ -1,13 +1,11 @@
-function togglePopup(){
-    document.getElementById("popup-1").classList.toggle("active");
-    
-  }
-  function togglePopup2(){
-    document.getElementById("popup-1").classList.toggle("active",false);
-    
-    document.getElementById("popup-2").classList.toggle("active");
-  }
-  function togglePopup3(){
-    document.getElementById("popup-2").classList.toggle("active",false);
-    document.getElementById("popup-3").classList.toggle("active");
-  }
+var btnPopup = document.getElementById('btnPopup');
+var overlay = document.getElementById('overlay');
+btnPopup.addEventListener('click',openMoadl);
+function openMoadl() {
+overlay.style.display='block';
+}
+var btnClose = document.getElementById('btnClose');
+btnClose.addEventListener('click',closeModal);
+function closeModal() {
+    overlay.style.display='none';
+    }
