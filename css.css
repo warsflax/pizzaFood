@@ -20,8 +20,8 @@
 
 .container .card{
   position: relative;
-  width: 320px;
-  height: 450px;
+  width: 150px;
+  height: 300px;
   background: white;
   border-radius: 20px;
   overflow: hidden;
@@ -76,7 +76,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 270px;
+  width: 200px;
 }
 
 .container .card .contentBx{
@@ -202,4 +202,21 @@
   transform: translateY(0px);
   transition-delay: 0.75s;
   
+}
+.fixed-btn{
+  position: fixed;
+  background-color: #e91e63;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  bottom: 200px;
+  right: 3%;
+  border-radius: 3px;
+  text-align: center;
+}
+.fixed-btn p{
+text-transform:uppercase;
+font-family: Arial;
+font-weight: 900;
+color: #fff ;
 }
