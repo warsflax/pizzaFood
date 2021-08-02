@@ -29,7 +29,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css.css" >
   <link rel="stylesheet" href="store.css" >
-  
+
 </head>
 
 <body>
@@ -51,15 +51,20 @@
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
+      <div class="row">
+    <li><a   href="#hero" id="btnPopup" type='button' style="color: white;" >Card</a></li>
+  <div id="counter">
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
+  </div>
+  </div>
+    <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="apropos.html">About</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
           <li><a class="nav-link scrollto" href="apropos.html #events">you have a event?</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="#hero" onclick="togglePopup()">Card</a></li>
+      
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -81,12 +86,9 @@
           <div class="carousel-item active" style="background: url(assets/img/slide/pizza.png);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><span>Pizza</span> for the legend</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
+              <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
-                </div>
+               </div>
               </div>
             </div>
           </div>
@@ -95,12 +97,9 @@
           <div class="carousel-item" style="background: url(assets/img/slide/pizza2.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
+              <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
-                </div>
+               </div>
               </div>
             </div>
           </div>
@@ -110,11 +109,8 @@
 
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
             </div>
@@ -145,52 +141,54 @@
             </div>
             <div class="hiho">
               <div class="row">
+             
                 <div class="col-lg-3">
                   <div class="container">
                     <div class="card">
-                      <p>Sauce tomate à l'origan, mozzarella, champignons frais, oignons rouges frais,
-                        poivrons verts frais, tomates fraîches et Olives noires</p>
-                     
+               
                       <div class="imgBx">
-                        <img src="assets/img/pizza/pizzaVégétarienne.png">
+                        <img class="shop-item-image" src="assets/img/pizza/pizzaVégétarienne.png">
                       </div>
                       <div class="contentBx">
-                        <h2 style="color: black;">Végétarienne</h2>
-                      <h3>16,70$</h3>
-                      <a href="#"style="background-color: black;"><span style="color: white;">Buy Now</span></a>
-                      </div>
+                        <h2 style="color: black;"  class="shop-item-title">Végétarienne</h2>
+                      <h3 class="shop-item-price">16,70$</h3>
+                      <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">buy Now</span>
+                    </div>
                     </div>
                   </div>
                   </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
               <div class="container">
                 <div class="card">
                   <p>Crème fraîche légère, mozzarella, fromage de chèvre, miel</p>
-                 
+
                   <div class="imgBx">
-                    <img src="assets/img/pizza/Chèvre-Miel.png">
+                    <img class="shop-item-image" src="assets/img/pizza/Chèvre-Miel.png">
                   </div>
                   <div class="contentBx">
-                    <h2 style="color: black;">Chèvre-Miel</h2>
-                  <h3>18,70$</h3>
-                    <a href="#"style="background-color: black;"><span style="color: white;">Buy Now</span></a>
-                  </div>
+                    <h2 style="color: black;"  class="shop-item-title">Chèvre-Miel</h2>
+                  <h3 class="shop-item-price">18,70$</h3>
+                  <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">buy Now</span>
+                </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
+          </div>
+
+          <div class="row">
+              <div class="col-lg-3">
             <div class="container">
                 <div class="card">
                   <p>Crème fraîche légère, mozzarella, fromage de chèvre, miel</p>
-                 
+
                   <div class="imgBx">
-                    <img src="assets/img/pizza/Montagnarde.png">
+                    <img class="shop-item-image" src="assets/img/pizza/Montagnarde.png">
                   </div>
                   <div class="contentBx">
-                    <h2 style="color: black;">Montagnarde</h2>
-                  <h3 style="color: black;">18,80$</h3>
-                    <a href="#"style="background-color: black;"><span style="color: white;">Buy Now</span></a>
-                  </div>
+                    <h2 style="color: black;"  class="shop-item-title">Montagnarde</h2>
+                  <h3 style="color: black;" class="shop-item-price">18,80$</h3>
+                  <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">buy Now</span>
+                </div>
                 </div>
               </div>
             </div>
@@ -198,19 +196,20 @@
               <div class="container">
                 <div class="card">
                   <div class="imgBx">
-                    <img src="assets/img/pizza/pizza1.png">
+                    <img class="shop-item-image" src="assets/img/pizza/pizza1.png">
                   </div>
                   <div class="contentBx">
-                    <h2 style="color: black;">Orient</h2>
-                    <h3>16$</h3>
-                  
-                    <a href="#" style="background-color: black;"><span style="color: white;">buy Now</span></a>
+                    <h2 style="color: black;" class="shop-item-title">Orient</h2>
+                    <h3  class="shop-item-price">16$</h3>
+
+                  <span style="color: white; background-color: black;" class="shop-item-button"onclick="cardCounter()">buy Now</span>
                   </div>
                 </div>
               </div>
               </div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+                
                     <div class="hiho" style="background-color: white;">
                       <div class="row">
                         <div class="col-lg-3">
@@ -218,13 +217,13 @@
                         <div class="card" style="background-color: black;">
                           <p>Sauce barbecue, mozzarella, haché au bœuf*, filet de poulet rôti et mariné et merguez**</p>
                           <div class="imgBx">
-                            <img src="assets/img/pizza/BPM.png">
+                            <img class="shop-item-image" src="assets/img/pizza/BPM.png">
                           </div>
                           <div class="contentBx">
-                            <h2 style="color: black;">BPM</h2>
-                            <h3>18.90$</h3>
-                          
-                            <a href="#">Buy Now</a>
+                            <h2 style="color: black;" class="shop-item-title">BPM</h2>
+                            <h3 class="shop-item-price">18.90$</h3>
+
+                            <a class="shop-item-button"onclick="cardCounter()">Buy Now</a>
                           </div>
                         </div>
                       </div>
@@ -234,28 +233,30 @@
                         <div class="card" style="background-color: black;">
                           <p>Crème fraîche légère, mozzarella, pommes de terre, lardons et fromage à raclette</p>
                           <div class="imgBx" >
-                            <img src="assets/img/pizza/Raclette.png">
+                            <img class="shop-item-image" src="assets/img/pizza/Raclette.png">
                           </div>
                           <div class="contentBx">
-                            <h2>Raclette</h2>
-                            <h3>18$</h3>
-                          
-                            <a href="#">Buy Now</a>
+                            <h2 class="shop-item-title">Raclette</h2>
+                            <h3 class="shop-item-price">18$</h3>
+
+                            <a class="shop-item-button"onclick="cardCounter()">Buy Now</a>
                           </div>
                         </div>
                       </div>
                         </div>
+                      </div>
+                      <div class="row">
                         <div class="col-lg-3">
                       <div class="container">
                         <div class="card" style="background-color: black;">
                           <div class="imgBx">
-                            <img src="assets/img/pizza/pepperoni.png">
+                            <img class="shop-item-image" src="assets/img/pizza/pepperoni.png">
                           </div>
                           <div class="contentBx">
-                            <h2>Pepperoni Lovers</h2>
-                            <h3>18,80$</h3>
-                          
-                            <a href="#">Buy Now</a>
+                            <h2  class="shop-item-title">Pepperoni Lovers</h2>
+                            <h3 class="shop-item-price">18,80$</h3>
+
+                            <a class="shop-item-button"onclick="cardCounter()">Buy Now</a>
                           </div>
                         </div>
                       </div>
@@ -270,27 +271,28 @@
                                 <h2 class="shop-item-title">Hawaïenne</h2>
                                 <h3 class="shop-item-price">19$</h3>
                                 <!-- <button class="" type="button">Buy Now</button> -->
-                                <a  class="shop-item-button" type="button">Buy Now</a>
+                                <a  class="shop-item-button" type="button" onclick="cardCounter()">Buy Now</a>
                               </div>
                             </div>
-                          </div> 
+                          </div>
                         </div>
-                      
+                      </div>
                     </div>
                   </div>
-                 
-                
+
+
     </section><!-- End Menu Section -->
-<!-- card -->
-<!--
-<div class="popup" id="popup-1">
-  <div class="overlay"></div>
-  <div class="content" >
-   <div class="close-btn" onclick="togglePopup()">×</div>
-    <button   class="btn btn-primary" style="background-color: red;" onclick="togglePopup()" type="button">x</button>
- 
-  <h2>T9ed Tkon nssity mashrity <span style="color: rgb(95, 250, 95);">dessert??</span> </h2>
-  <a href="#" onclick="togglePopup2()"  class="shop-item-button">doz lekhlasss</a>
+
+<!-- popup2 -->
+<div id="overlay" class="overlay">
+  <div id="popup" class="popup">
+  <div onclick="closeModal()" type=button>X</div>
+  
+  <h2>Ymken nssity <span style="color: rgb(233, 18, 18);">dessert??</span> </h2>
+  
+<center>
+<a href="#buying" id="btnClose" >la chokran</a>
+</center>
   <div class="hiho" style="background-color: white;">
   <div class="row">
     <div class="col-lg-4">
@@ -302,11 +304,11 @@
           <div class="contentBx ">
             <h2 class="shop-item-title">glace de chocola</h2>
             <h3 class="shop-item-price">19$</h3>
-    
-            <a  class="shop-item-button" type="button">Buy Now</a>
+
+            <a  class="shop-item-button" type="button"onclick="cardCounter()">Buy Now</a>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
     <div class="col-lg-4">
       <div class="container">
@@ -317,12 +319,14 @@
           <div class="contentBx ">
             <h2 class="shop-item-title">glace de coffe</h2>
             <h3 class="shop-item-price">19$</h3>
-           
-            <a  class="shop-item-button" type="button">Buy Now</a>
+
+            <a  class="shop-item-button" type="button"onclick="cardCounter()">Buy Now</a>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
+    </div>
+    <div class="row">
     <div class="col-lg-4">
       <div class="container">
         <div class="card" style="background-color: black;">
@@ -332,118 +336,39 @@
           <div class="contentBx ">
             <h2 class="shop-item-title">glace fresé</h2>
             <h3 class="shop-item-price">19$</h3>
-        
-            <a  class="shop-item-button" type="button">Buy Now</a>
+
+            <a  class="shop-item-button" type="button"onclick="cardCounter()">Buy Now</a>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
+  </div>
 </div>
 </div>
 
   </div>
 </div>
 
-<div class="popup" id="popup-2">
-  <div class="overlay"></div>
-  <div class="content" > 
-    <button   class="btn btn-primary" style="background-color: red;" onclick="togglePopup2()" type="button">x</button>
-  
-  <h2>T9ed Tkon nssity mashrity <span style="color: rgb(95, 250, 95);">Monada??</span> </h2>
-  <a href="#" onclick="togglePopup3()"  class="shop-item-button">doz lekhlasss</a>
-  <div class="hiho" style="background-color: white;">
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="container">
-        <div class="card" style="background-color: black;">
-          <div class="imgBx">
-            <img class="shop-item-image" style="top: 1px;" src="assets/img/coca.png">
-          </div>
-          <div class="contentBx ">
-            <h2 class="shop-item-title">coca cola 33cl</h2>
-            <h3 class="shop-item-price">8$</h3> 
-            <a  class="shop-item-button" type="button">Buy Now</a>
-          </div>
-        </div>
-      </div> 
-    </div>
-    <div class="col-lg-4">
-      <div class="container">
-        <div class="card" style="background-color: black;">
-          <div class="imgBx">
-            <img class="shop-item-image" src="assets/img/new-hawai-ananas-pet.png">
-          </div>
-          <div class="contentBx ">
-            <h2 class="shop-item-title">Hawaï</h2>
-            <h3 class="shop-item-price">8$</h3> 
-            <a  class="shop-item-button" type="button">Buy Now</a>
-          </div>
-        </div>
-      </div> 
-    </div>
-    <div class="col-lg-4">
-      <div class="container">
-        <div class="card" style="background-color: black;">
-          <div class="imgBx">
-            <img class="shop-item-image" style="top: 1px;" src="assets/img/pepisi.png">
-          </div>
-          <div class="contentBx ">
-            <h2 class="shop-item-title">pepsi</h2>
-            <h3 class="shop-item-price">9$</h3> 
-            <a  class="shop-item-button" type="button">Buy Now</a>
-          </div>
-        </div>
-      </div> 
-    </div>
-</div>
-</div>
-
-  </div>
-</div>
- crad
- <div class="popup" id="popup-3">
-  <div class="overlay"></div>
-  <div class="content" >
-  <div class="close-btn" onclick="togglePopup()">×</div>
-    <button   class="btn btn-primary" style="background-color: red;" onclick="togglePopup3()" type="button">x</button>
- contenue -->
-    <!--
-<section class="container content-section">
+<section class="container content-section" id="buying">
   <h2 class="section-header">CART</h2>
   <div class="cart-row">
       <span class="cart-item cart-header cart-column">ITEM</span>
       <span class="cart-price cart-header cart-column">PRICE</span>
       <span class="cart-quantity cart-header cart-column">QUANTITY</span>
   </div>
-  <div class="cart-items">
+  <div id="cart-items" class="cart-items">
   </div>
   <div class="cart-total">
       <strong class="cart-total-title">Total</strong>
-      <span class="cart-total-price">$0</span>
-  </div>
-  <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-</section>
-
-  </div>
-</div> -->
-<section class="container content-section">
-  <h2 class="section-header">CART</h2>
-  <div class="cart-row">
-      <span class="cart-item cart-header cart-column">ITEM</span>
-      <span class="cart-price cart-header cart-column">PRICE</span>
-      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-  </div>
-  <div class="cart-items">
-  </div>
-  <div class="cart-total">
-      <strong class="cart-total-title">Total</strong>
-      <span class="cart-total-price">$0</span>
+      <span class="cart-total-price"  id="total">$0</span>
   </div>
   <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
 </section>
   <main id="main">
 
-  
+
+
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -453,7 +378,7 @@
         </div>
       </div>
 
-      
+
       <div class="container mt-5">
 
         <div class="info-wrap">
@@ -526,13 +451,13 @@
         &copy; Copyright <strong><span>pano</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-  
+
       </div>
     </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
